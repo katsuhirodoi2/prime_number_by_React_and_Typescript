@@ -1,46 +1,31 @@
-# Getting Started with Create React App
+# 指定した自然数より大きい素数を1つ表示するプログラム（by React + TypeScript）
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 準備と実行
 
-## Available Scripts
+1. コードをクローン
+   ```bash
+   $ git clone git@github.com:katsuhirodoi2/prime_number_by_react_and_typescript.git
+   ```
+2. 必要パッケージのインストール
+   ```bash
+   $ npm install
+   ```
+3. アプリの実行
+   ```bash
+   $ npm install
+   ```
+   [http://localhost:3000](http://localhost:3000) をブラウザで開く
 
-In the project directory, you can run:
+## 使い方
 
-### `npm start`
+1. テキストボックスに自然数を入れて「計算」ボタンを押す（この自然数より大きい素数が表示されることになる）
+   
+2. しばらくすると、結果が表示される
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+   表示結果
+   ```
+   9,999,999,999 (99億9999万9999) よりも大きい素数: 10,000,000,019 (100億19), 入力桁数: 10桁, 素数桁数: 11桁
+   実行時間: 0.01770秒
+   ```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+なお、9,007,199,254,740,881以上の数を入力した場合、計算時間が一気に長くなる。
